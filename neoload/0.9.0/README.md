@@ -5,7 +5,7 @@ This integration allows Performance testers and Developers to automatically trig
 when it is released on staging/QA environment. This will save time to testers and increase confidence in the performance's application.
 
 Here is a quick overview of a NeoLoad Test Result started by Keptn (the Test Result name and description can be customized):
-![](https://raw.githubusercontent.com/keptn-sandbox/artifacthub/main/neoload/0.9.0/images/neoload-web-test-result.png)
+![](https://raw.githubusercontent.com/guillaumebert/artifacthub/main/neoload/0.9.0/images/neoload-web-test-result.png)
 
 ## Prerequisites 
 
@@ -18,9 +18,9 @@ In NeoLoad Web, please follow the [NeoLoad Web documentation](https://www.neotys
 Keep these NeoLoad Web datas, they will be used later to configure the Keptn Webhook.
 
 - Test ID: The ID of the test can be found in the URL
-![](https://raw.githubusercontent.com/keptn-sandbox/artifacthub/main/neoload/0.9.0/images/test-id.png)
+![](https://raw.githubusercontent.com/guillaumebert/artifacthub/main/neoload/0.9.0/images/test-id.png)
 - Workspace ID: The ID of the workspace where the test belongs can be found in the URL of the "Settings" page
-![](https://raw.githubusercontent.com/keptn-sandbox/artifacthub/main/neoload/0.9.0/images/workspace-id.png)
+![](https://raw.githubusercontent.com/guillaumebert/artifacthub/main/neoload/0.9.0/images/workspace-id.png)
 - Account token of a tester or admin user. See [documentation of user profile](https://www.neotys.com/documents/doc/nlweb/latest/en/html/#24621.htm).
 Please be aware that the NeoLoad Web access token is sensitive data. If this data is known by other parties, 
 they can use NeoLoad Web API to access all your tests and results. We will store this token as Keptn secret to keep it hidden.
@@ -52,7 +52,7 @@ accountToken: XXXXXXXXXXXXXXXXXXXXXXXX
 
 For reference, here is a screenshot of that secret:
 
-![](https://raw.githubusercontent.com/keptn-sandbox/artifacthub/main/neoload/0.9.0/images/secret-configuration.png)
+![](https://raw.githubusercontent.com/guillaumebert/artifacthub/main/neoload/0.9.0/images/secret-configuration.png)
 
 ### Step 2: Subscribe to a Keptn event to start NeoLoad Web test
 
@@ -79,7 +79,7 @@ This is an example for sending a deployment finished event.
 * Finally, click **Create subscription** to save and enable the webhook for your Slack integration.
 
 * Here is a screenshot for your reference:
-  ![](https://raw.githubusercontent.com/keptn-sandbox/artifacthub/main/neoload/0.9.0/images/deployment-finished-subscription.png)
+  ![](https://raw.githubusercontent.com/guillaumebert/artifacthub/main/neoload/0.9.0/images/deployment-finished-subscription.png)
 
 * Update the webhook configuration on the git repository of the project to add the property `sendFinished: true`. The file `webhook/webhook.yaml` will look like:
 ```yaml
